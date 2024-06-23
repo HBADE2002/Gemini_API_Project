@@ -22,11 +22,22 @@ const Chatbot = () => {
       const result = await model.generateContent(userMessage);
       const response = await result.response;
       const botMessage = response.text();
-      setMessages((prevMessages) => [...prevMessages, { text: botMessage, isUser: false }]);
+      const formattedBotMessage = formatMessage(botMessage);
+      setMessages((prevMessages) => [...prevMessages, { text: formattedBotMessage, isUser: false }]);
     } catch (error) {
       console.error('Error:', error);
       setMessages((prevMessages) => [...prevMessages, { text: 'Error fetching response from AI', isUser: false }]);
     }
+  };
+
+  const formatMessage = (message) => {
+    return message
+      .replace(/(\*\*)(.*?)(\*\*)/g, '<strong>$2</strong>') // Bold
+      .replace(/(\*)(.*?)(\*)/g, '<em>$2</em>') // Italic
+      .replace(/(\#\# )(.*?)(\n)/g, '<h2>$2</h2>') // H2 Header
+      .replace(/(\# )(.*?)(\n)/g, '<h1>$2</h1>') // H1 Header
+      .replace(/(\- )(.*?)(\n)/g, '<ul><li>$2</li></ul>') // List Item
+      .replace(/(\n)/g, '<br>'); // Line Break
   };
 
   return (
