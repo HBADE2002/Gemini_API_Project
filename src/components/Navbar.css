@@ -1,0 +1,46 @@
+/* NavBar.css */
+
+.bg-custom {
+    background-color: #343a40; /* Dark background color */
+  }
+  
+  .navbar-brand, .nav-link, .nav-dropdown .nav-dropdown-item, .form-control {
+    color: #ffffff; /* White text color */
+  }
+  
+  .navbar-brand:hover, .nav-link:hover, .nav-dropdown .nav-dropdown-item:hover {
+    color: #ffc107; /* Yellow text on hover */
+  }
+  
+  .navbar-toggler {
+    border-color: #ffc107; /* Yellow border for the toggler */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, %204%, %204%, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .form-control {
+    background-color: #495057; /* Dark background for input */
+    border: none;
+    color: #ffffff;
+  }
+  
+  .form-control:focus {
+    background-color: #6c757d; /* Slightly lighter background on focus */
+    color: #ffffff;
+    outline: none;
+    box-shadow: none; /* Remove default focus shadow */
+  }
+  
+  .btn-outline-success {
+    color: #ffc107;
+    border-color: #ffc107;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #ffc107;
+    color: #343a40;
+    border-color: #ffc107;
+  }
+  
