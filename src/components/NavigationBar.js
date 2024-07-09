@@ -1,48 +1,24 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './Navbar.css';  
+import { Navbar, Nav, Form, FormControl, Button, Container } from 'react-bootstrap';
+import { FaSearch } from 'react-icons/fa';
+import './Navbar.css';
 
-function NavScrollExample() {
+function ImprovedNavbar() {
   return (
-    <Navbar expand="lg" className="bg-custom">
-      <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
+    <Navbar bg="light" expand="lg" className="py-2 shadow-sm">
+      <Container>
+        <Navbar.Brand href="#home" className="font-weight-bold">YourBrand</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto">
+            <Nav.Link href="#home" className="mx-3">Home</Nav.Link>
+            <Nav.Link href="#about" className="mx-3">About</Nav.Link>
+            <Nav.Link href="#services" className="mx-3">Services</Nav.Link>
+            <Nav.Link href="#contact" className="mx-3">Contact</Nav.Link>
           </Nav>
           <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
+            <FormControl type="text" placeholder="Search" className="mr-2" />
+            <Button variant="outline-primary"><FaSearch /></Button>
           </Form>
         </Navbar.Collapse>
       </Container>
@@ -50,4 +26,4 @@ function NavScrollExample() {
   );
 }
 
-export default NavScrollExample;
+export default ImprovedNavbar;
