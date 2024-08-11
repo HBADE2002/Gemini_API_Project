@@ -1,3 +1,36 @@
+This application is a Master's Education Consultant, it provided helpful and useful information regarding admission guidance just like a Education Consultant, it can answer your questions regarding documents and academic qualifications required to get admitted in certain countries, it is a very simple application and can be used by anyone. It uses the power of Google Gemini API, to provide simple and direct answers to questions related to the various processes involved for foreign students to get admission in Universities abroad.
+
+Powered by Cutting-Edge Technology
+Content:
+● Frontend: Developed using ReactJS for a seamless and interactive user 
+experience.
+● Backend: Python serves as the backbone, managing data processing and API 
+interactions.
+● AI Engine: Powered by Gemini API, fine-tuned with a vast dataset of questions 
+related to master's education abroad.
+● Integration: Robust integration of AI and web technologies to ensure real-time 
+responses and accuracy
+
+The Mechanics Behind EduCare AI
+Content:
+● Data Collection: Extensive collection of frequently asked questions (FAQs) on master's 
+programs abroad.
+● Model Fine-Tuning: Leveraging the Gemini API to fine-tune the AI model, enhancing 
+its understanding of specific queries.
+● User Interaction: Students input their queries into the chatbot.
+
+
+This is how my application looks like
+
+
+1. Home Page
+
+![image](https://github.com/user-attachments/assets/e3e1e616-eef1-44c5-ae65-17c9e7a9182b)
+
+2. There is Chat function which makes it easy to talk with the Educare AI Bot
+
+![image](https://github.com/user-attachments/assets/72cd62e1-1fcc-448a-aded-1fb585a24bd7)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
