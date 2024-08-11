@@ -7,7 +7,7 @@ function ImprovedNavbar() {
   return (
     <Navbar bg="light" expand="lg" className="py-2 shadow-sm">
       <Container>
-        <Navbar.Brand href="#home" className="font-weight-bold">YourBrand</Navbar.Brand>
+        <Navbar.Brand href="#home" className="font-weight-bold">EduCareAI</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
